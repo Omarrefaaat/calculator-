@@ -9,17 +9,11 @@ public class dashboard2 {
         String[] employeeDepartments = {"HR", "IT", "IT", "HR", "Finance", "Finance"};
 
         System.out.println("Number of employee in company : " + numOfCompanyEmploy(employeeNames));
-        System.out.println("------------------------------------------------------");
         System.out.println("total salaries in company : " + totalSalaryOfCompany(employeeSalaries));
-        System.out.println("------------------------------------------------------");
         System.out.println("the highest salary of company is : " + highestSalaryCompany(employeeSalaries));
-        System.out.println("------------------------------------------------------");
         System.out.println("the lowest salary of company is : " + lowestSalaryCompany(employeeSalaries));
-        System.out.println("------------------------------------------------------");
         System.out.println("the department is : " + Arrays.toString(uniqueDepartments(employeeDepartments)));
-        System.out.println("------------------------------------------------------");
         totalSalariesOfDepartment(employeeDepartments,employeeSalaries,uniqueDepartments(employeeDepartments));
-        System.out.println("------------------------------------------------------");
         maxAndMinSalaryOfEachDepartment(employeeDepartments, employeeSalaries, uniqueDepartments(employeeDepartments));
     }
 
@@ -100,6 +94,8 @@ public class dashboard2 {
                     if (salaries[i] < lowestSalary) {
                         lowestSalary = salaries[i];
                     }
+
+
                 }
             }
             System.out.println("department  " + department + "\n" + "the highest salary " + highestSalary + "\n" + "the lowest salary " + lowestSalary + "\n" + "********");
